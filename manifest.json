@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "baidu poi robot",
+	"version": "1.0",
+	"description": "baidu poi auto complete",
+	"icons" : {
+		"256": "icon.png"
+	},
+	
+	 "content_scripts": [
+        {
+            "matches": ["http://usertest.baidu.com/poi/rc"],
+            "js": ["jquery-1.9.1.min.js","content_script.js"]
+        }
+    ],
+	
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "poi robot"
+	}
+}
